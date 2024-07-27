@@ -171,7 +171,7 @@ i{
 
 .adocao{
    
-    height: 500px;
+    height: 900px;
     background-color: #ffc3c2;
     clip-path: polygon(0 0, 0% 20%, 0 47%, 0 98%, 50% 85%, 100% 98%, 100% 61%, 100% 20%, 100% 0, 51% 0);
 }
@@ -187,26 +187,26 @@ i{
     float: left;
     left: 0;
     width: 200px;
-    
-    
+ 
 }
 
 .container-adocao{
     display: flex;
     flex-direction: column;
-    height: 490px;
+    height: 890px;
     align-items: center;
     clip-path: polygon(0 0, 0% 20%, 0 47%, 0 100%, 50% 85%, 100% 100%, 100% 61%, 100% 20%, 100% 0, 51% 0);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,176,173,1) 0%, rgba(255,123,119,1) 100%);
 }
 
-.adocao h2{
+.texto-adocao{
     color: var(--cor-branco);
     font-family: "SF New Republic";
     font-weight: 300;
     font-size: 32px;
     margin-top: 20px;
 }
+
 
 select{
     width: 10rem;
@@ -226,6 +226,46 @@ select{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
+}
+.fts-adocao{
+ display: flex;
+ margin-bottom: 40px;
+
+}
+
+.img-gatos{
+   width: 330px;
+}
+
+.icon-adocao{
+position: relative;
+top: -120px;
+left: 20px;
+background-color: var(--cor-azul-escuro);
+font-size: 60px;
+text-align: center;
+height: 5rem;
+width: 4rem;
+border-radius: 20px;
+box-shadow: 10px 5px 40px  var(--cor-azul-escuro);
+}
+
+.h2-adocao,.p-adocao,.span-adocao{
+ color: var(--cor-branco);
+ margin-left: 120px;
+
+
+}
+
+.btn-ver_todos{
+   border: 1px solid var(--cor-branco);
+   color: var(--cor-branco);
+   background-color: #FF8885;
+   width: 15rem;
+   height: 3rem;
+   border-radius: 5px;
+   cursor: pointer;
 }
 
 .form{
