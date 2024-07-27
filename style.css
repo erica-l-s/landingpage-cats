@@ -10,8 +10,19 @@
     --cor-branco:#f5f5f5;
     --cor-rosa-claro: #FFE1E0;
     --cor-rosa-escuro:#FF8B87;
+   
 
+}
 
+@font-face {
+    font-family: "SF New Republic";
+    src: url("./font/sf-new-republic.regular.ttf");
+}
+
+i{
+ color: var(--cor-white);
+ margin-left: 6px;
+ font-size: smaller;
 }
 
 .logo img{
@@ -68,14 +79,56 @@
     cursor: pointer;
 }
 
+
 .carousel{
+    background-color: #fff0f0;
+    clip-path: polygon(15% 7%, 100% 0, 90% 100%, 0 93%, 0 0);
+    height: 530px;
+   
+}
+
+.container-carousel{
     background-color: var(--cor-rosa-claro);
-    height: 50vh;
+    clip-path: polygon(15% 12%, 100% 0, 85% 100%, 0 100%, 0 2%);
+    display: flex;
+    font-size: 40px;
+    text-align: justify;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.img-cat{
+    height: 31.25rem;
+ 
+}
+
+.img-linha{
+    height: 12rem;
+}
+
+.texto-carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "SF New Republic";
+   
+}
+
+.btn-carousel{
+    color: var(--cor-white);
+    background-color: var(--cor-blue);
+    border: none;
+    font-size: 16px;
+    width: 11rem;
+    height: 3rem;
+    border-radius: 5px;
+    margin-top: 2rem;
 }
 
 .apoie_colabore{
     height: 50vh;
-    background-color: var(--cor-branco);
+    
 }
 
 .adocao{
@@ -91,4 +144,21 @@
 .newsletter{
     height: 30vh;
     background-color: var(--cor-rosa-escuro);
+}
+
+@media (max-width: 900px) {
+    .menu_nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        margin: 0 2rem;
+    }
+
+    .menu_nav li{
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    
 }
