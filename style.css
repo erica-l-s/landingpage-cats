@@ -268,6 +268,80 @@ box-shadow: 10px 5px 40px  var(--cor-azul-escuro);
    cursor: pointer;
 }
 
+.sobre{
+    position: relative;
+}
+
+.container-sobre{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-sobre_ong{
+    width: 90%;
+   
+}
+
+.h2-sobre{
+    font-family: "SF New Republic";
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.p-sobre{
+ width: 50%;
+ text-align: center;
+ margin-bottom: 80px;
+ margin-left: 350px;
+}
+
+.btn-saiba_mais{
+    position: absolute;
+    width: 15rem;
+    height: 4rem;
+    font-size: 16px;
+    color: var(--cor-branco);
+    background-color: var(--cor-azul-escuro);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    bottom: 4rem;
+    right: 17rem;
+}
+
+.perguntas{
+  position: relative;
+  background-color: var(--cor-rosa-claro);
+    
+}
+.container-perguntas{
+    display: flex;
+    flex-direction: column;
+}
+
+.perguntas i{
+    color: var(--cor-rosa-escuro);
+    font-size: xx-large;
+    text-align: center;
+}
+
+.pata-esquerda, .pata-direita{
+    width: 200px;
+}
+.pata-esquerda{
+    position: relative;
+    bottom: 6rem;
+    
+    
+}
+
+.pata-direita{
+  position: relative;
+  left: 71.4rem;
+}
+
 .form{
     height: 50vh;
     background-color: var(--cor-azul-escuro);
