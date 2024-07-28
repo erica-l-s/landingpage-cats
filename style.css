@@ -314,11 +314,11 @@ box-shadow: 10px 5px 40px  var(--cor-azul-escuro);
 .perguntas{
   position: relative;
   background-color: var(--cor-rosa-claro);
+  
     
 }
 .container-perguntas{
-    display: flex;
-    flex-direction: column;
+    text-align: center;
 }
 
 .perguntas i{
@@ -333,13 +333,12 @@ box-shadow: 10px 5px 40px  var(--cor-azul-escuro);
 .pata-esquerda{
     position: relative;
     bottom: 6rem;
-    
-    
+    right: 35rem;
 }
 
 .pata-direita{
   position: relative;
-  left: 71.4rem;
+  left: 35.7rem;
 }
 
 .form{
