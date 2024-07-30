@@ -19,6 +19,7 @@
     src: url("./font/sf-new-republic.regular.ttf");
 }
 
+
 i{
  color: var(--cor-white);
  margin-left: 6px;
@@ -279,7 +280,7 @@ box-shadow: 10px 5px 40px  var(--cor-azul-escuro);
 
 .img-sobre_ong{
     width: 90%;
-   
+       
 }
 
 .h2-sobre{
@@ -311,35 +312,120 @@ box-shadow: 10px 5px 40px  var(--cor-azul-escuro);
     right: 17rem;
 }
 
+
 .perguntas{
-  position: relative;
-  background-color: var(--cor-rosa-claro);
-  
+    
+    background-color: var(--cor-rosa-claro);
+    position: relative;
+     
+}
+.div_perguntas{
+    height: 750px;
+    text-align: center;
     
 }
-.container-perguntas{
-    text-align: center;
+.h2_perguntas{
+    font-family: "SF New Republic";
+    font-size: 24px; 
+      
 }
-
-.perguntas i{
+.far{
     color: var(--cor-rosa-escuro);
-    font-size: xx-large;
-    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
-
-.pata-esquerda, .pata-direita{
-    width: 200px;
+.pata_esquerda{
+    width: 300px;
+    position: absolute;
+    top: -6rem;
+    right: 65.7rem;
+    
 }
-.pata-esquerda{
+.pata_direita{
+    width: 300px;
     position: relative;
-    bottom: 6rem;
-    right: 35rem;
+    left: 32.6rem;
+    top:-30rem;
+    background-attachment: fixed;
 }
+details{
+  
+    width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius:5px;
+    cursor: pointer;
+    font-family: "Roboto";
 
-.pata-direita{
-  position: relative;
-  left: 35.7rem;
-}
+    
+}       
+    summary{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+      margin-bottom: 0;
+      transition: margin-bottom .4s;
+      
+      
+    }
+     
+    summary::-webkit-details-marker,
+    summary::marker{
+      display: none;
+    }
+    
+ 
+    summary::after{
+      font-family: "Font Awesome 5 Free";
+      content: '\f078';
+      font-size: 1rem;
+      margin-right: 1rem;
+      cursor: pointer;
+      color: #FF8885;
+      background-color: var(--cor-rosa-claro);
+      padding: .70rem;
+      border-radius: 5px;
+    
+    }
+    
+    *:not(summary) {
+      animation-name: fade;
+      animation-duration: .4s;
+    }
+  
+  
+ 
+  details[open]{
+    background-color: var(--cor-rosa-escuro);
+    
+    p{
+        color: var(--cor-branco);
+    } 
+    summary{
+      margin-bottom: 1.5rem;
+      color: var(--cor-branco);
+      
+     
+      &::after{
+        background-color: transparent;
+        border: 1px solid var(--cor-white);
+        color: var(--cor-white);
+        content: "\f077";
+      }
+    }
+  }
+  
+  @keyframes fade {
+    0%{
+      opacity: 0;
+    }
+    
+    100%{
+      opacity: 1;
+    }
+  }
 
 .form{
     height: 50vh;
