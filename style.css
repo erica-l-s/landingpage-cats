@@ -10,7 +10,7 @@
     --cor-branco:#f5f5f5;
     --cor-rosa-claro: #FFE1E0;
     --cor-rosa-escuro:#FF8B87;
-   
+    --cor-liner:linear-gradient(180deg, rgba(255,139,135,1) 41%, rgba(255,139,135,0.5942752100840336) 62%);
 
 }
 
@@ -358,7 +358,6 @@ details{
     cursor: pointer;
     font-family: "Roboto";
 
-    
 }       
     summary{
       display: flex;
@@ -367,8 +366,7 @@ details{
       font-weight: 600;
       margin-bottom: 0;
       transition: margin-bottom .4s;
-      
-      
+    
     }
      
     summary::-webkit-details-marker,
@@ -425,7 +423,115 @@ details{
     100%{
       opacity: 1;
     }
+}
+
+.depoimentos{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 80px 0;
+    
+}
+
+.container-depoimentos{
+    margin-left: 80px;
+    width: 220px;
+}
+
+.container-depoimentos h2{
+    font-family: "SF New Republic";
+    font-size: 26px; 
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.container-depoimentos p{
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.img-aspas{
+    width: 200px;
+}
+
+.carrossel{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.container-card{
+    display: flex;
+    position: relative;
+    transition: transform 0.5s ease;
+    left: 0;
+   
+}
+
+.card{
+    font-family: "Roboto";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 220px;
+    height: 220px;
+    background-color:var(--cor-white);
+    box-shadow: 10px 10px 20px 20px var(--cor-rosa-claro);
+    border-radius: 5px;
+    position: relative;
+    margin: 50px;
+    padding: 20px;
+   
+    
+}
+
+.card h3, .card p{
+    margin: 5px;
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
   }
+ 
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+  #prev {
+    left: 10px;
+    
+    
+  }
+
+  #next {
+    right: 150px;
+    
+  }
+
+.avatar{
+    position: absolute;
+    top: -3rem;
+    z-index: 1;
+    background: linear-gradient(to bottom, #ff8b78, #ff8a783b) border-box;
+    border-radius: 50em;
+    border: 10px solid transparent;
+    
+    
+}
 
 .form{
     height: 50vh;
