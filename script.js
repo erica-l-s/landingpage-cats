@@ -1,60 +1,32 @@
-const prev = document.querySelector("#prev");
-const next = document.querySelector("#next");
+const swiper = new Swiper('.slider-wrapper', {
+  loop: true,
+  grabCursor:true,
+  spaceBetween:30,
+  
 
-let carouselVp = document.querySelector("#carrossel-vp");
-let cCarouselInner = document.querySelector("#card");
-let carouselInnerWidth = cCarouselInner.getBoundingClientRect().width;
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+    dynamicBullets:true,
+  },
 
-let leftValue = 0;
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-// Variable used to set the carousel movement value (card's width + gap)
-const totalMovementSize =
-  parseFloat(
-    document.querySelector(".card").getBoundingClientRect().width,
-    10
-  ) +
-  parseFloat(
-    window.getComputedStyle(cCarouselInner).getPropertyValue("gap"),
-    10
-  );
-
-prev.addEventListener("click", () => {
-  if (leftValue !== 0) {
-    leftValue += totalMovementSize; // Ajuste aqui para incrementar
-    cCarouselInner.style.left = leftValue + "px";
+  breakpoints:{
+    0:{
+      slidesPerView: 1
+    },
+    768:{
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView:4
+    }
   }
+
 });
-
-next.addEventListener("click", () => {
-  const carouselVpWidth = carouselVp.getBoundingClientRect().width;
-  if (carouselInnerWidth - Math.abs(leftValue) > carouselVpWidth) {
-    leftValue -= totalMovementSize;
-    cCarouselInner.style.left = leftValue + "px";
-  }
-});
-
-const mediaQuery510 = window.matchMedia("(max-width: 510px)");
-const mediaQuery770 = window.matchMedia("(max-width: 770px)");
-
-mediaQuery510.addEventListener("change", mediaManagement);
-mediaQuery770.addEventListener("change", mediaManagement);
-
-let oldViewportWidth = window.innerWidth;
-
-function mediaManagement() {
-  const newViewportWidth = window.innerWidth;
-
-  if (leftValue <= -totalMovementSize && oldViewportWidth < newViewportWidth) {
-    leftValue += totalMovementSize;
-    cCarouselInner.style.left = leftValue + "px";
-    oldViewportWidth = newViewportWidth;
-  } else if (
-    leftValue <= -totalMovementSize &&
-    oldViewportWidth > newViewportWidth
-  ) {
-    leftValue -= totalMovementSize;
-    cCarouselInner.style.left = leftValue + "px";
-    oldViewportWidth = newViewportWidth;
-  }
-}
-

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -159,63 +163,64 @@
               uam a! Corrupti obcaecati similique commodi!</p>
          </div>
 
-         <div id="carrossel-vp" class="carrossel" >
-            <div class="arrow" id="prev"><img src="./img/seta-esquerda.svg"></div>
-            <div class="arrow" id="next"><img src="./img/seta-direita.svg"></div>
-           
-            <div id="card" class="container-card">
-                <div class="card">
+         <div class="container-carrossel swiper">
+            <div class="slider-wrapper">
+             <div class="card-list swiper-wrapper">
+                <div class="card-item swiper-slide">
                     <img src="./img/img1.svg" class="avatar">
                     <h3>Laura</h3>
-                    <p>Tutora da Paçoca</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <p class="content">Tutora da Paçoca</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Donec pharetra tellus ut erat consequat auctor integer nulla nunc.</p>
                 </div>
-                <div class="card">
+                <div class="card-item swiper-slide">
                     <img src="./img/img2.svg" class="avatar">
                     <h3>Rômulo</h3>
-                    <p>Tutor do Pantera</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <p class="content">Tutor do Pantera</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Donec pharetra tellus ut erat consequat auctor integer nulla nunc.</p>
                 </div>
-                <div class="card">
+                <div class="card-item swiper-slide">
                     <img src="./img/img2.svg" class="avatar">
                     <h3>Rômulo</h3>
-                    <p>Tutor do Pantera</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <p class="content">Tutor do Pantera</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Donec pharetra tellus ut erat consequat auctor integer nulla nunc.</p>
                 </div>
-                <div class="card">
+                <div class="card-item swiper-slide">
                     <img src="./img/img2.svg" class="avatar">
                     <h3>Rômulo</h3>
-                    <p>Tutor do Pantera</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <p class="content">Tutor do Pantera</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Donec pharetra tellus ut erat consequat auctor integer nulla nunc.</p>
                 </div>
-                <div class="card">
+                <div class="card-item swiper-slide">
                     <img src="./img/img2.svg" class="avatar">
                     <h3>Rômulo</h3>
-                    <p>Tutor do Pantera</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <p class="content">Tutor do Pantera</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Donec pharetra tellus ut erat consequat auctor integer nulla nunc.</p>
                 </div>
-                <div class="card">
+                <div class="card-item swiper-slide">
                     <img src="./img/img2.svg" class="avatar">
                     <h3>Rômulo</h3>
-                    <p>Tutor do Pantera</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <p class="content">Tutor do Pantera</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Donec pharetra tellus ut erat consequat auctor integer nulla nunc.</p>
                 </div>
-                <div class="card">
+                <div class="card-item swiper-slide">
                     <img src="./img/img2.svg" class="avatar">
                     <h3>Rômulo</h3>
-                    <p>Tutor do Pantera</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <p class="content">Tutor do Pantera</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Donec pharetra tellus ut erat consequat auctor integer nulla nunc.</p>
                 </div>
-           
+            </div> 
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div> 
         </div>
-         </div>
+       </div>
          
 
 
@@ -251,5 +256,6 @@
         </li>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
  <script src="./script.js"></script>
 </html>
