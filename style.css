@@ -524,11 +524,9 @@ details{
     color: var(--cor-rosa-claro);
    
 }
-
-.container-parceiros{
-    
+.parceiros{
+    height: 80vh;
 }
-
 .h2_parceiros{
    
     font-family: "SF New Republic";
@@ -560,15 +558,199 @@ details{
     
 }
 
+
 .form{
-    height: 50vh;
+    display: flex;
+    position: relative;
+    height: 74vh;
     background-color: var(--cor-azul-escuro);
+    padding-top: 80px;
+  
+}
+
+.h2_form{
+    color: var(--cor-branco);
+    font-family: "SF New Republic";
+    font-size: 40px;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 400px;
+    margin-left: 200px;
+   
+    
+}
+
+.forms input{
+ background: transparent;
+ height: 3rem;
+ border: 1px solid white;
+ border-radius: 5px;
+ 
+}
+
+.forms input::placeholder{
+    color: var(--cor-branco);
+    padding: 0.5rem;
+}
+
+.btn-form{
+    position: relative;
+    width: 22rem;
+    height: 4rem;
+    font-size: 18px;
+    color: var(--cor-branco);
+    background-color: #014C87;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    bottom: -2rem;
+    margin-left: 20px;
+    
+}
+
+.img-gato-duvidas{
+    width: 60%;
+    position: absolute;
+    top: -8rem;
+    right: 0;
+}
+
+.form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Altura da área inclinada */
+    background-color: var(--cor-white); /* Cor da inclinação */
+    transform-origin: top right;
+    transform: skewY(4deg); /* Inclina apenas a parte superior */
+}
+
+.container-duvidas{
+    height: 50vh;
+    background-color: #E7807D;
+    
+    
+}
+
+.container-duvidas h2{
+    color: var(--cor-branco);
+}
+
+.h2_container-duvidas{
+    font-family: "SF New Republic";
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.cards-duvidas{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.card-duvidas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: var(--cor-branco);
+    margin-top: 40px;
+    padding:2rem;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.card-duvidas:hover{
+background-color: #014C87;
+border-radius: 5px;
+}
+
+.card-duvidas h2{
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-duvidas p{
+    font-family: "Roboto";
+    color: var(--cor-branco);
+    font-size: 12px;
+    margin-top: 15px;
+   
+}
+
+.fa-envelope,
+.fa-whatsapp, 
+.fa-heart{
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: var(--cor-white);
+    
+}
+
+.rede-social{
+ font-size: 20px;
 }
 
 .newsletter{
-    height: 30vh;
-    background-color: var(--cor-rosa-escuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    height: 50vh;
+    background-color: #E7807D;
+    text-align: center;
 }
+
+.newsletter h2{
+    font-family: "Roboto";
+    font-size: 20px;
+    color: var(--cor-branco);
+    margin-bottom: 10px;
+}
+
+.newsletter span{
+    font-family: "Roboto";
+    font-size: 12px;
+    color: var(--cor-branco);
+    margin-bottom: 10px;
+}
+
+.newsletter input{
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--cor-branco);
+    border-radius: 3px;
+    height: 3rem;
+    width: 600px;
+}
+
+.newsletter input::placeholder{
+    color: var(--cor-branco);
+    padding-left: 10px;
+    font-size: 12px;
+   
+}
+
+.fa-arrow-right{
+    position: absolute;
+    right: 0;
+}
+
 
 @media (max-width: 768px) {
     .menu_nav {
