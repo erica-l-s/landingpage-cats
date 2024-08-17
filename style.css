@@ -723,6 +723,10 @@ border-radius: 5px;
     margin-bottom: 10px;
 }
 
+.input-newsletter{
+  position: relative;  
+}
+
 .newsletter span{
     font-family: "Roboto";
     font-size: 12px;
@@ -731,7 +735,7 @@ border-radius: 5px;
 }
 
 .newsletter input{
-    position: relative;
+    
     background-color: transparent;
     border: 1px solid var(--cor-branco);
     border-radius: 3px;
@@ -748,7 +752,9 @@ border-radius: 5px;
 
 .fa-arrow-right{
     position: absolute;
-    right: 0;
+    right: 5px;
+    font-size: 30px;
+    bottom: 10px;
 }
 
 
