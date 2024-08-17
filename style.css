@@ -525,6 +525,41 @@ details{
    
 }
 
+.container-parceiros{
+    
+}
+
+.h2_parceiros{
+   
+    font-family: "SF New Republic";
+    text-align: center;
+    font-weight: 400;
+    font-size: 38px;
+    position: absolute;
+    z-index: 99;
+    margin: 10px 500px;
+   
+}
+
+.img_parceiros_linha{
+    margin-top: -20rem;
+    height: 25.8rem;
+    position: relative;
+}
+
+.container-parceiros_carrossel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.img_parceiros-carrossel{
+    width: 12rem;
+    margin: 50px 0 100px 0;
+    
+}
+
 .form{
     height: 50vh;
     background-color: var(--cor-azul-escuro);
